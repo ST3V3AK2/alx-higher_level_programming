@@ -12,6 +12,16 @@
 
 int check_cycle(listint_t *list)
 {
-	print_listint(list);
-	return (1);
+	listint_t *current;
+	listint_t *temp;
+
+	current = list;
+	temp = list;
+	while (current != NULL)
+	{
+		current = current->next;
+		if (temp == current)
+			return (1);
+	}
+	return (0);
 }
