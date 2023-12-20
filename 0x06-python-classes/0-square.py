@@ -1,6 +1,6 @@
 #usr/bin/python3
+"""Creates a Square Class"""
 
 class Square:
-    """This creates a Square object and performs simple calculations
-    on it"""
+    """Create a Sqaure"""
     pass

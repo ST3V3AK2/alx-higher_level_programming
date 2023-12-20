@@ -5,15 +5,6 @@ class Square:
     on it"""
     def __init__(self, size=0)
         self.size = size
-        try:
-            temp = int(size)
-            if temp < 0:
-                raise ValueError
-            self.size = temp
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
 
     @property
     def size(self):
@@ -22,10 +13,9 @@ class Square:
     @size.setter
     def size(self, value):
         try:
-            temp = int(size)
-            if temp < 0:
+            self.size = int(size)
+            if self.size < 0:
                 raise ValueError
-            self.size = temp
         except TypeError:
             print("size must be an integer")
         except ValueError:
@@ -33,4 +23,4 @@ class Square:
 
 
     def area(self):
-        return size * size
+        return self.size * self.size
