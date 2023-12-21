@@ -1,17 +1,29 @@
-#usr/bin/python3
+#!/usr/bin/python3
+"""Creates a Square Class"""
 
 class Square:
     """This creates a Square object and performs simple calculations
     on it"""
     def __init__(self, size=0):
+        """The init method initializes classes private attributes
+
+        Args:
+            size(int): the size of the square
+        Raises:
+            TypeError: if size is not an integer
+            ValueError: if size is less than 0
+        """
         try:
             temp = int(size)
-            if self.size < 0:
+            if temp < 0:
                 raise ValueError
         except TypeError:
             print("size must be an integer")
         except ValueError:
             print("size must be >= 0")
+        else:
+            self.size = temp
 
     def area(self):
-        return size * size
+        """This calculates the area of the squar"""
+        return self.size * self.size
