@@ -5,6 +5,8 @@
 class Square:
     """This creates a Square object and performs simple calculations
     on it"""
+
+
     def __init__(self, size=0):
         """The init method initializes classes private attributes
 
@@ -23,4 +25,4 @@ class Square:
         except ValueError:
             print("size must be >= 0")
         else:
-            self.size = temp
+            self.__size = temp

@@ -14,7 +14,7 @@ class Square:
             TypeError: if size is not an integer
             ValueError: if size is less than 0
         """
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
@@ -39,4 +39,4 @@ class Square:
 
     def area(self):
         """This calculates the area of the square"""
-        return self.size * self.size
+        return self.__size * self.__size
