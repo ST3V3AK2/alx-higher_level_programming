@@ -8,7 +8,6 @@ class Square:
 
     def __init__(self, size=0)
         """The init method initializes classes private attributes
-
         Args:
             size(int): the size of the square
         Raises:
