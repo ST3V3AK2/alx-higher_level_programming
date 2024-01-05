@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """Creates a Square Class"""
 
 
@@ -34,12 +34,21 @@ class Square:
 
 
     def area(self):
-        """This calculates the area of the square"""
+        """This calculates the area of the square
+
+        Return:
+            The area of the square
+        """
         return self.__size * self.__size
 
     def print(self):
-        """Prints a the square"""
-        if self.__size == 0
+        """
+        Prints a the square
+        """
+        if self.__size == 0:
+            print("")
+            return
+
         for i in range(self.__size):
             for j in range(self.__size):
                 print("#", end="")
