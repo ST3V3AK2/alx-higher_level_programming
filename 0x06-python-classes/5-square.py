@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Creates a Square Class"""
 
+
 class Square:
-    """This creates a Square object and performs simple calculations
-    on it"""
+    """This creates a Square object and performs simple calculations on it"""
+
     def __init__(self, size=0)
         """The init method initializes classes private attributes
 
@@ -13,7 +14,7 @@ class Square:
             TypeError: if size is not an integer
             ValueError: if size is less than 0
         """
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
@@ -24,27 +25,22 @@ class Square:
 
     @size.setter
     def size(self, value):
-        try:
-            self.size = int(self.size)
-            if self.size < 0:
-                raise ValueError
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         else:
-            self.__size = valu
+            self.__size = value
 
 
     def area(self):
         """This calculates the area of the square"""
-        return self.size * self.size
+        return self.__size * self.__size
 
     def print(self):
         """Prints a the square"""
-        if self.size == 0
-        for i in range(self.size):
-            for j in range(self.size):
+        if self.__size == 0
+        for i in range(self.__size):
+            for j in range(self.__size):
                 print("#", end="")
             print("")
-
