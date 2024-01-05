@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """Create a Square Class"""
-
+i
 
 class Square:
     """This creates a Square object and performs simple calculations
     on it"""
-
-    def __init__(self, size=0)
+    def __init__(self, size=0):
         """The init method initializes classes private attributes
         Args:
             size(int): the size of the square

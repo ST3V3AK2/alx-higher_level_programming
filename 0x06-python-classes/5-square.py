@@ -5,7 +5,7 @@
 class Square:
     """This creates a Square object and performs simple calculations on it"""
 
-    def __init__(self, size=0)
+    def __init__(self, size=0):
         """The init method initializes classes private attributes
 
         Args:
