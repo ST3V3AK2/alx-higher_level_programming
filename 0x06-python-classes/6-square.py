@@ -50,6 +50,8 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif is_int(value[0]) == False or is_int(value[1]) == False:
             raise TypeError("position must be a tuple of 2 positive integers")
+        elif len(value) < 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
@@ -68,7 +70,7 @@ class Square:
         if self.__size == 0:
             print("")
             return
-        
+
         print("\n" * self.__position[1], end="")
         for i in range(self.__size):
             print(" " * self.__position[0], end="")
