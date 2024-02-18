@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Creates a Rectangle class"""
 
+
 class Rectangle:
     """Creates a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes the rectangle arttributes"""
-        self.__width = width
-        self.__height  = height
+        self.width = width
+        self.height  = height
 
     @property
     def width(self):

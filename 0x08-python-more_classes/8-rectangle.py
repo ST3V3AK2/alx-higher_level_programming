@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Creates a Rectangle class"""
 
+
 class Rectangle:
     """Creates a rectangle"""
     number_of_instances = 0
@@ -8,8 +9,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes the rectangle arttributes"""
-        self.__width = width
-        self.__height  = height
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     @property
@@ -77,14 +78,16 @@ class Rectangle:
             else:
                 return rect_2
 
-
     def area(self):
         """Calcuates the area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
         """Computes the perimeter of the rectangle"""
-        return self.__width * 2 + self.__height * 2
+        perimeter = 0
+        if self.__width > 0 and self.__height > 0:
+            perimeter = self.__width * 2 + self.__height * 2
+        return perimeter
 
     def __str__(self):
         """Prints a the square"""
@@ -99,7 +102,7 @@ class Rectangle:
         return ""
 
     def __repr__(self):
-        return f"Rectangle ({self.__width}, {self.__height})"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
