@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Create a functon to identify a class """
+
 
 def is_same_class(obj, a_class):
     """ 
@@ -11,6 +13,4 @@ def is_same_class(obj, a_class):
     Return:
         True if obj is an instance of a_class else False
     """
-    if a_class == object:
-        return False
-    return isinstance(obj, a_class)
+    return obj.__class__ == a_class
