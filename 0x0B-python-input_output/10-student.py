@@ -28,11 +28,8 @@ class Student:
             attrs: attribute names
         """
         new_dict = {}
-        if attrs != None:
-            for arg in self.__dict__.keys():
-                if arg in attrs:
-                    data = {arg: self.__dict__[arg]}
-                    new_dict.update(data)
+        if attrs is not None:
+            new_dict = {arg: self.__dict__[arg] for arg in self.__dict__.keys() & attrs}
         else:
             new_dict = self.__dict__
         return new_dict
