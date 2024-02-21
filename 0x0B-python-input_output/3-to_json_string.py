@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ Creates a function that prints strings in JSON format """
 
 
