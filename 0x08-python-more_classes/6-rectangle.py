@@ -4,7 +4,7 @@
 
 class Rectangle:
     """Creates a Rectangle"""
-    
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -76,7 +76,7 @@ class Rectangle:
         for h in range(self.__height):
             for w in range(self.__width):
                 print("#", end="")
-            if w == self.__height - 1:
+            if h == self.__height - 1:
                 print("")
         return ""
 

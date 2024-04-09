@@ -4,7 +4,7 @@
 
 class Rectangle:
     """Creates a Rectangle"""
-    
+
     def __init__(self, width=0, height=0):
         """ Intializes the input variables """
         self.width = width
@@ -73,7 +73,7 @@ class Rectangle:
         for h in range(self.__height):
             for w in range(self.__width):
                 print("#", end="")
-            if w == self.__height - 1:
+            if h == self.__height - 1:
                 print("")
         return ""
 
