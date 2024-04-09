@@ -4,8 +4,8 @@
 
 class Rectangle:
     """Creates a Rectangle"""
- 
-    def __init__(self, width, height):
+
+    def __init__(self, width=0, height=0):
         """ Intializes the input variables """
         self.width = width
         self.height = height
@@ -37,7 +37,6 @@ class Rectangle:
             ValueError: if the height is less than 0
         """
         return self.__height
-
 
     @width.setter
     def width(self, value):
