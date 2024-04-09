@@ -95,7 +95,6 @@ class Rectangle:
         """
         return cls(size, size)
 
-
     def area(self):
         """Computes the area of the Rectangle"""
         return self.__width * self.__height
