@@ -13,4 +13,4 @@ class MyList(list):
         """ Prints the sorted(ascending) version of the list """
         arr = self.copy()
         arr.sort()
-        print(arrr)
+        print(arr)
