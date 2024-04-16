@@ -19,7 +19,7 @@ def Rectangle(BaseGeometry):
         Return:
             Nothing
         """
-        super().__init__(self)
+        super().__init__()
         self.integer_validator("width", width)
         self.integer_validator("height", height)
 
