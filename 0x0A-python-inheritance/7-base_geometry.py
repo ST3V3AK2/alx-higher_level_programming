@@ -23,7 +23,7 @@ class BaseGeometry:
         Return:
             value
         """
-       if not isinstance(value, int):
+       if not type(value) is not int:
            raise TypeError(f"{name} must be an integer")
        elif value <= 0:
            raise ValueError(f"{name} must be greater tha 0")

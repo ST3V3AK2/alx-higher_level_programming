@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Create a list class"""
 
+
 class MyList(list):
     """ Create a list object """
 
