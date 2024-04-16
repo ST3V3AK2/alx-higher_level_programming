@@ -20,5 +20,8 @@ def Rectangle(BaseGeometry):
             Nothing
         """
         super().__init__(self)
-        self.__width = self.integer_validator("width", width)
-        self.__height = self.integer_validator("height", height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
+        self.__width = width
+        self.__height = height

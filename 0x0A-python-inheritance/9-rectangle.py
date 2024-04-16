@@ -23,10 +23,11 @@ def Rectangle(BaseGeometry):
         self.__width = self.integer_validator("width", width)
         self.__height = self.integer_validator("height", height)
 
-        def area(self):
-            """ Computes the area of the rectangle """
-            return self.__width * self.__height
 
-        def __str__(self):
-            """ Prints an acceptable represntation of the parameters """
-            return f"[Rectangle] {self.__width}/{self.__height}"
+    def area(self):
+        """ Computes the area of the rectangle """
+        return self.__width * self.__height
+
+    def __str__(self):
+        """ Prints an acceptable represntation of the parameters """
+        return f"[Rectangle] {self.__width}/{self.__height}"
